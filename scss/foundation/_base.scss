@@ -1,0 +1,6 @@
+@use "variable" as v;
+
+body {
+  font-size: v.$font-base;
+  background-color: aqua;
+}

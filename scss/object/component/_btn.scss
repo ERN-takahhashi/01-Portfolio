@@ -1,0 +1,17 @@
+@use "../../foundation/variable" as v;
+
+.c-btn {
+  padding: 12px 50px;
+  border-radius: 4px;
+  font-size: v.$font-base;
+
+
+  &__text {
+    font-weight: bold;
+  }
+
+  &--primary {
+    background: v.$color-accent;
+    color: #fff;
+  }
+}

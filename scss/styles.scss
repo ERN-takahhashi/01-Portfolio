@@ -1,0 +1,25 @@
+// foundation
+@use "foundation/variable";
+@use "foundation/mixin";
+@use "foundation/reset";
+@use "foundation/base";
+
+// layout
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+
+//component
+@use "object/component/btn";
+@use "object/component/card";
+@use "object/component/globalNav";
+@use "object/component/img";
+@use "object/component/sectionTitle";
+
+//project
+@use "object/project/hero";
+@use "object/project/event";
+@use "object/project/shop";
+
+//utility
+@use "object/utility/spacing";
