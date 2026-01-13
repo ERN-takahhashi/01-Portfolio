@@ -1,0 +1,8 @@
+@use "../../foundation/variable" as v;
+
+.c-text {
+  &--15px {
+    font-size: 15px;
+    color: v.$color-textMain;
+  }
+}

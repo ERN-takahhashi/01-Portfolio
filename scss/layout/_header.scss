@@ -1,11 +1,21 @@
 .l-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+
+  &__top {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+
+    &--left {
+      display: flex;
+    }
+  }
 }
 
-.l-header__inner {
+.l-headerInner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
+  flex-direction: column;
 }

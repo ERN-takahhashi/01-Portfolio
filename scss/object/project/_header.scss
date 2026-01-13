@@ -1,0 +1,15 @@
+.p-header {
+  &__links {
+    display: flex;
+  }
+
+  &__utility {
+    display: flex;
+    justify-content: flex-end;
+    gap: 19px;
+  }
+
+  &__links {
+    gap: 25px;
+  }
+}

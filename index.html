@@ -5,22 +5,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>01-Portfolio</title>
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
 </head>
 
 <body>
-
   <header class="l-header">
-    <div class="l-header__inner">
-      <h1 class="c-logo">東京ウミマチ</h1>
-
+    <div class="l-headerInner">
+      <div class="l-header__top">
+        <div class="l-header__top--left">
+          <div class="p-header__logo u-mr--50">
+            <a href="/">
+              <img class="c-logo" width="213" height="37" src="images/logo_umimachi.png" alt="東京ウミマチ">
+            </a>
+          </div>
+          <nav class="p-header__links" aria-label="関連施設">
+            <a href="#" class="c-relatedSite">
+              <span class="c-linkText u-mr--5">
+                東京<br>
+                スカイツリー
+              </span>
+              <i data-feather="chevron-right" data-class="c-icon__arrow"></i>
+            </a>
+            <a href="#" class="c-relatedSite">
+              <span class="c-linkText u-mr--5">
+                東京スカイツリー<br>
+                イーストタワー
+              </span>
+              <i data-feather="chevron-right" data-class="c-icon__arrow"></i>
+            </a>
+            <a href="#" class="c-relatedSite">
+              <span class="c-linkText u-mr--5">
+                東京<br>
+                ミズマチ
+              </span>
+              <i data-feather="chevron-right" data-class="c-icon__arrow"></i>
+            </a>
+          </nav>
+        </div>
+        <div class="l-header__top--right">
+          <div class="p-header__utility">
+            <a href="/" class="c-utilityLink">
+              <span class="c-linkText__utility">LANGUAGE</span>
+              <i data-feather="globe"></i>
+            </a>
+            <a href="/" class="c-utilityLink">
+              <span class="c-linkText__utility">ACCESS</span>
+              <i data-feather="map-pin"></i>
+            </a>
+            <a href="/" class="c-utilityLink">
+              <span class="c-linkText__utility">MENU</span>
+              <i data-feather="menu"></i>
+            </a>
+          </div>
+        </div>
+      </div>
       <nav class="c-globalNav">
         <ul class="c-globalNav__list">
-          <li><a href="#">イベント</a></li>
-          <li><a href="#">ショップ</a></li>
-          <li><a href="#">グルメ</a></li>
-          <li><a href="#">フロアガイド</a></li>
-          <li><a href="#">アクセス</a></li>
+          <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">イベント<br>キャンペーン</a></li>
+          <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">ショップ</a></li>
+          <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">グルメ</a></li>
+          <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">フロアガイド</a></li>
+          <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">営業<br>施設案内</a></li>
+          <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">TOBU POINTの<br>ご案内</a></li>
+
         </ul>
       </nav>
     </div>
@@ -28,10 +78,37 @@
 
   <!-- ===================== Main Visual ===================== -->
   <section class="p-hero">
-    <img src="images/hero.jpg" alt="">
-    <div class="p-hero__content">
-      <h2>文字</h2>
-      <p>最新イベント・ショップ情報をお届け</p>
+    <div class="p-hero__slider js-heroSlider">
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_1.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_2.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_3.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_4.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_5.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_6.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_7.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_8.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_9.jpg" alt="">
+      </div>
+      <div class="p-hero__slide">
+        <img class="p-hero__image" src="images/mv_10.jpg" alt="">
+      </div>
     </div>
   </section>
 
@@ -82,7 +159,9 @@
     </ul>
     <p class="l-footer__copy">コピーライト</p>
   </footer>
-
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

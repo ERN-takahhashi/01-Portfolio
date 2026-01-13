@@ -1,19 +1,94 @@
 .p-hero {
+  width: 437px;
+  margin: 0 auto;
   position: relative;
-}
 
-.p-hero img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
+  &__image {
+    display: block;
+    width: 437px;
+    height: 318px;
+    object-fit: cover;
+  }
 
-.p-hero__content {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  color: #fff;
-  text-align: center;
-  background: rgba(0, 0, 0, .3);
+  /* =========================
+    slick arrows
+  ========================= */
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+
+    background: transparent;
+    border: none;
+    padding: 0;
+
+    font-size: 0;
+    line-height: 0;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-top: 2px solid #005bac;
+      border-right: 2px solid #005bac;
+    }
+  }
+
+  /* 右矢印 */
+  .slick-next {
+    right: -40px;
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  /* 左矢印 */
+  .slick-prev {
+    left: -40px;
+
+    &::before {
+      transform: rotate(-135deg);
+    }
+  }
+
+  /* =========================
+    slick dots
+  ========================= */
+
+  .slick-dots {
+    display: block;
+    bottom: -24px;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 6px;
+
+      &.slick-active button {
+        background: #005bac;
+      }
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      font-size: 0;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid #005bac;
+      background: #fff;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
 }

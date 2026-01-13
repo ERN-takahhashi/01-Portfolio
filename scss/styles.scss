@@ -5,7 +5,7 @@
 @use "foundation/base";
 
 // layout
-@use "layout/header";
+@use "layout/header" as l-header;
 @use "layout/main";
 @use "layout/footer";
 
@@ -15,11 +15,17 @@
 @use "object/component/globalNav";
 @use "object/component/img";
 @use "object/component/sectionTitle";
+@use "object/component/utilityLink";
+@use "object/component/linkText";
+@use "object/component/relatedSite";
+@use "object/component/icon";
+@use "object/component/text";
 
 //project
 @use "object/project/hero";
 @use "object/project/event";
 @use "object/project/shop";
+@use "object/project/header" as p-header;
 
 //utility
-@use "object/utility/spacing";
+@use "object/utility/gap";

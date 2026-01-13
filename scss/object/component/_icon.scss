@@ -1,0 +1,21 @@
+@use "../../foundation/variable" as v;
+
+svg.feather-chevron-right {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5px;
+  color: v.$color-main;
+}
+
+svg.feather-globe,
+svg.feather-menu {
+  width: 28px;
+  height: 28px;
+  color: v.$color-textMain;
+}
+
+svg.feather-map-pin {
+  width: 28px;
+  height: 28px;
+  color: v.$color-textMain;
+}

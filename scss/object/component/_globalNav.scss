@@ -1,9 +1,46 @@
-.c-globalNav__list {
-  display: flex;
-  gap: 24px;
-}
+@use "../../foundation/variable" as v;
 
-.c-globalNav a {
-  text-decoration: none;
-  color: #333;
+.c-globalNav {
+  background-color: #d5e6ed;
+  border-radius: 9999px;
+  padding: 9px 0;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    position: relative;
+    flex: 1;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 15px;
+      background-color: #666;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 600;
+    color: v.$color-textMain;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }

@@ -1,0 +1,30 @@
+@use "../../foundation/variable" as v;
+
+.c-linkText {
+  font-size: 11px;
+  line-height: 1.2;
+  color: v.$color-textLink;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+
+  // &::after {
+  //   content: "\f105";
+  //   font-family: "Font Awesome 5 Free";
+  //   font-weight: 900;
+  // }
+
+  &:hover {
+    color: v.$color-main;
+    text-decoration: underline;
+  }
+
+  &__utility {
+    font-size: 10px;
+    line-height: 1;
+    color: v.$color-textMain;
+  }
+
+  &__arrow {
+    font-size: 1.5em;
+  }
+}
