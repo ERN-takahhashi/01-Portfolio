@@ -217,42 +217,79 @@ svg.feather-map-pin {
   color: #4d4d4d;
 }
 
-.p-hero {
-  width: 437px;
-  margin: 0 auto;
+/* =========================
+  ラッパー（画面幅いっぱい）
+========================= */
+.p-hero-wrap {
   position: relative;
-  /* =========================
-    slick arrows
-  ========================= */
-  /* 右矢印 */
-  /* 左矢印 */
-  /* =========================
-    slick dots
-  ========================= */
+  width: 100vw;
+  overflow: hidden;
 }
-.p-hero__image {
+
+/* =========================
+  Swiper本体
+========================= */
+.p-hero {
+  position: relative;
+  width: 100%;
+}
+
+.p-hero.swiper {
+  overflow: visible;
+}
+
+/* =========================
+  スライド
+========================= */
+.p-hero .swiper-wrapper {
+  align-items: center;
+}
+
+.p-hero .swiper-slide {
+  width: 437px;
+  flex-shrink: 0;
+}
+
+/* 画像サイズ固定 */
+.p-hero .swiper-slide img {
   display: block;
   width: 437px;
   height: 318px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-hero .slick-prev,
-.p-hero .slick-next {
+
+/* =========================
+  矢印（共通）
+========================= */
+.p-hero-wrap .swiper-button-prev,
+.p-hero-wrap .swiper-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  z-index: 2;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
   background: transparent;
   border: none;
   padding: 0;
-  font-size: 0;
-  line-height: 0;
 }
-.p-hero .slick-prev::before,
-.p-hero .slick-next::before {
+
+/* Swiperデフォルト矢印を消す */
+.p-hero-wrap .swiper-button-prev::after,
+.p-hero-wrap .swiper-button-next::after {
+  display: none;
+}
+
+.p-hero-wrap .swiper-navigation-icon {
+  display: none;
+}
+
+/* =========================
+  自作矢印
+========================= */
+.p-hero-wrap .swiper-button-prev::before,
+.p-hero-wrap .swiper-button-next::before {
   content: "";
   display: block;
   width: 100%;
@@ -260,42 +297,48 @@ svg.feather-map-pin {
   border-top: 2px solid #005bac;
   border-right: 2px solid #005bac;
 }
-.p-hero .slick-next {
-  right: -40px;
+
+/* 左 */
+.p-hero-wrap .swiper-button-prev {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -260px;
 }
-.p-hero .slick-next::before {
-  transform: rotate(45deg);
-}
-.p-hero .slick-prev {
-  left: -40px;
-}
-.p-hero .slick-prev::before {
+.p-hero-wrap .swiper-button-prev::before {
   transform: rotate(-135deg);
 }
-.p-hero .slick-dots {
-  display: block;
-  bottom: -24px;
+
+/* 右 */
+.p-hero-wrap .swiper-button-next {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 260px;
+}
+.p-hero-wrap .swiper-button-next::before {
+  transform: rotate(45deg);
+}
+
+/* =========================
+  ページネーション
+========================= */
+.p-hero-wrap .swiper-pagination {
+  position: relative;
+  margin-top: 24px;
   text-align: center;
 }
-.p-hero .slick-dots li {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 6px;
-}
-.p-hero .slick-dots li.slick-active button {
-  background: #005bac;
-}
-.p-hero .slick-dots button {
+
+.p-hero-wrap .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  font-size: 0;
-  padding: 0;
+  margin: 0 6px;
   border-radius: 50%;
   border: 1px solid #005bac;
   background: #fff;
+  opacity: 1;
 }
-.p-hero .slick-dots button::before {
-  display: none;
+
+.p-hero-wrap .swiper-pagination-bullet-active {
+  background: #005bac;
 }
 
 .p-event__list,
