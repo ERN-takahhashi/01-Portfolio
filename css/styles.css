@@ -27,7 +27,7 @@ img {
 }
 
 html {
-  font-family: "ヒラギノ角ゴ ProN W3", "Noto Sans JP", sans-serif, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", sans-serif;
+  font-family: "Noto Sans JP", sans-serif, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", sans-serif;
 }
 
 body {
@@ -84,26 +84,65 @@ a {
   font-size: 12px;
 }
 
-.c-btn {
-  padding: 12px 50px;
-  border-radius: 4px;
+.c-btn__shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4b91ca;
+  background-color: #FFF;
+  border-radius: 60px;
+  border: 1px solid #4b91ca;
+  box-shadow: 3px 3px 0 #4b91ca;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.c-btn__text {
-  font-weight: bold;
-}
-.c-btn--primary {
-  color: #fff;
+.c-btn__shadow:hover {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  text-decoration: underline;
 }
 
-.c-card {
-  background: #fff;
-  border: 1px solid #ddd;
+.c-card__event {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 290px;
   padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(77, 77, 77, 0.3);
+  background: #F5F5F5;
 }
-
-.c-card img {
+.c-card__img--event {
   width: 100%;
-  height: auto;
+  height: 170px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-card__tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #FFF;
+  background-color: #4d4d4d;
+  border-radius: 30px;
+  padding: 2px 11px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+.c-card__title {
+  font-size: 12px;
+  color: #4d4d4d;
+  margin-top: 8.4px;
+}
+.c-card__period {
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808080;
+  margin-top: 4.8px;
 }
 
 .c-globalNav {
@@ -148,9 +187,17 @@ a {
   font-weight: bold;
 }
 
-.c-sectionTitle {
-  font-size: 28px;
-  margin-bottom: 24px;
+.c-title__en {
+  color: #4d4d4d;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.c-title__jp {
+  color: #4d4d4d;
+  font-size: 14px;
 }
 
 .c-utilityLink {
@@ -212,9 +259,89 @@ svg.feather-map-pin {
   color: #4d4d4d;
 }
 
+.c-icon {
+  color: #fff;
+  stroke-width: 3;
+}
+.c-icon--clock {
+  width: 38px;
+  height: 38px;
+  padding: 5px;
+  color: #fff;
+  stroke-width: 2;
+  background-color: #4b91ca;
+  border-radius: 50%;
+}
+
+.c-text--11px {
+  font-size: 11px;
+  color: #4d4d4d;
+}
+.c-text--13px {
+  font-size: 13px;
+  color: #4d4d4d;
+}
 .c-text--15px {
   font-size: 15px;
   color: #4d4d4d;
+}
+
+.c-text__keyword {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5px 6.5px;
+  width: 72px;
+  height: 32px;
+  font-size: 13px;
+  color: #4d4d4d;
+  font-weight: 600;
+  background: #ebf4f9;
+  border-radius: 35px;
+  text-decoration: none;
+  letter-spacing: -1.2px;
+}
+.c-text__keyword:hover {
+  color: #FFF;
+  font-weight: 600;
+  background: #4b91ca;
+  text-decoration: underline;
+}
+
+.c-search__input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  padding: 4px 30px 4px 16px;
+}
+.c-search__input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b9b9b9;
+}
+.c-search__input::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b9b9b9;
+}
+.c-search__button {
+  border: none;
+  position: absolute;
+  right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #4b91ca;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.c-search__button:hover {
+  transform: rotate(90deg);
 }
 
 /* =========================
@@ -294,8 +421,8 @@ svg.feather-map-pin {
   display: block;
   width: 100%;
   height: 100%;
-  border-top: 2px solid #005bac;
-  border-right: 2px solid #005bac;
+  border-top: 3px solid #e7a576;
+  border-right: 3px solid #e7a576;
 }
 
 /* 左 */
@@ -341,6 +468,43 @@ svg.feather-map-pin {
   background: #005bac;
 }
 
+.p-event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-event__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+}
+.p-event__card--scroll {
+  width: 1000px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.p-event__cardList {
+  display: flex;
+  gap: 20px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.p-event__cardList--item {
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.p-eventTitle__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-eventBtn__wrap {
+  display: flex;
+  gap: 10px;
+}
+
 .p-event__list,
 .p-shop__list {
   display: grid;
@@ -360,6 +524,71 @@ svg.feather-map-pin {
   gap: 25px;
 }
 
+.p-infoBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-infoBar__inner--row {
+  display: flex;
+}
+.p-infoBar__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.p-infoBar__time--label {
+  font-size: 17px;
+  color: #4d4d4d;
+}
+.p-infoBar__time--timeMain {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #4d4d4d;
+}
+
+.p-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.p-search__form {
+  position: relative;
+  display: flex;
+  width: 244px;
+  align-items: center;
+  background: #fff;
+  border-radius: 35px;
+  border: 2px solid #4b91ca;
+  padding: 3px;
+}
+.p-search__keyword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.p-search__keywordList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.p-search__keywordList--item {
+  width: 72px;
+  height: 32px;
+}
+
+.u-mt--4 {
+  margin-top: 4px;
+}
+.u-mt--15 {
+  margin-top: 15px;
+}
+
 .u-mr--5 {
   margin-right: 5px;
 }
@@ -367,6 +596,13 @@ svg.feather-map-pin {
   margin-right: 50px;
 }
 
+.u-ml--20 {
+  margin-left: 20px;
+}
 .u-ml--50 {
   margin-left: 50px;
+}
+
+.u-bold--700 {
+  font-weight: 700;
 }

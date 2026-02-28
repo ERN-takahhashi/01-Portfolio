@@ -1,14 +1,25 @@
+@use "../../foundation/variable" as v;
+
 .c-btn {
-  padding: 12px 50px;
-  border-radius: 4px;
+  &__shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    color: v.$color-main;
+    background-color: #FFF;
+    border-radius: 60px;
+    border: 1px solid v.$color-main;
+    box-shadow: 3px 3px 0 v.$color-main;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-
-  &__text {
-    font-weight: bold;
-  }
-
-  &--primary {
-
-    color: #fff;
+    &:hover {
+      box-shadow: none;
+      transform: translate(3px, 3px);
+      text-decoration: underline;
+    }
   }
 }

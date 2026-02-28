@@ -19,3 +19,19 @@ svg.feather-map-pin {
   height: 28px;
   color: v.$color-textMain;
 }
+
+.c-icon {
+  color: #fff;
+  stroke-width: 3;
+
+  &--clock {
+    width: 38px;
+    height: 38px;
+    padding: 5px;
+    color: #fff;
+    stroke-width: 2;
+    background-color: #4b91ca;
+    border-radius: 50%;
+
+  }
+}

@@ -30,7 +30,7 @@
 }
 
 .p-hero .swiper-slide {
-  width: 437px; // ← 重要：固定
+  width: 437px;
   flex-shrink: 0;
 }
 
@@ -45,7 +45,6 @@
 /* =========================
   矢印（共通）
 ========================= */
-
 .p-hero-wrap .swiper-button-prev,
 .p-hero-wrap .swiper-button-next {
   position: absolute;

@@ -1,0 +1,32 @@
+@use "../../foundation/variable" as v;
+
+.p-infoBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    &--row {
+      display: flex;
+    }
+  }
+
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &--label {
+      font-size: 17px;
+      color: v.$color-textMain;
+    }
+
+    &--timeMain {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: v.$color-textMain;
+    }
+  }
+}

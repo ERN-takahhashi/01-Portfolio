@@ -14,18 +14,22 @@
 @use "object/component/card";
 @use "object/component/globalNav";
 @use "object/component/img";
-@use "object/component/sectionTitle";
+@use "object/component/title";
 @use "object/component/utilityLink";
 @use "object/component/linkText";
 @use "object/component/relatedSite";
 @use "object/component/icon";
 @use "object/component/text";
+@use "object/component/search";
 
 //project
 @use "object/project/hero";
 @use "object/project/event";
 @use "object/project/shop";
 @use "object/project/header" as p-header;
+@use "object/project/infoBar";
+@use "object/project/search" as p-search;
 
 //utility
 @use "object/utility/gap";
+@use "object/utility/utility";

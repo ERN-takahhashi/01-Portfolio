@@ -5,9 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>01-Portfolio</title>
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -69,13 +73,11 @@
           <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">フロアガイド</a></li>
           <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">営業<br>施設案内</a></li>
           <li class="c-globalNav__item"><a href="#" class="c-globalNav__text">TOBU POINTの<br>ご案内</a></li>
-
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ===================== Main Visual ===================== -->
   <div class="p-hero-wrap">
     <section class="p-hero swiper">
       <!-- /スライドを横並びにするコンテナ swiper-wrapper -->
@@ -121,23 +123,95 @@
     </section>
   </div>
 
-  <!-- ===================== Shop Section ===================== -->
-  <section class="p-shop">
-    <h2 class="c-section-title">SHOP</h2>
+  <section class="p-infoBar">
+    <div class="p-infoBar__inner">
+      <div class="p-infoBar__inner--row">
+        <div class="p-infoBar__time">
+          <span class="p-infoBar__time--icon">
+            <i data-feather="clock" class="c-icon--clock"></i></span>
+          <span class="p-infoBar__time--label">営業時間
+          </span>
+          <strong class="p-infoBar__time--timeMain">10:00〜20:00</strong>
+          <p class="c-text--11px u-ml--20">6F・7F・30F・31F 飲食店舗 11:00 - 23:00
+            <br>※一部店舗によって営業時間が異なります。詳しくは各店の詳細ページをご覧ください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <ul class="p-shop__list">
-      <li class="c-card">
-        <img src="images/shop01.jpg" alt="">
-        <h3>〇〇カフェ</h3>
-        <p>1F / カフェ</p>
-      </li>
+  <section class="p-search">
+    <form class="p-search__form">
+      <input class="c-search__input" type="text" name="search" placeholder="フリーワード検索">
+      <button class="c-search__button" type="submit">
+        <i data-feather="search" class="c-icon"></i></button>
+    </form>
+    <div class="p-search__keyword">
+      <span class="c-text--13px u-bold--700">リアルタイム<br>人気キーワード</span>
+      <ul class="p-search__keywordList">
+        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">レストラン</a></li>
+        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">ポケモン</a></li>
+        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">ちいかわ</a></li>
+        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">カフェ</a></li>
+      </ul>
+    </div>
+  </section>
 
-      <li class="c-card">
-        <img src="images/shop01.jpg" alt="">
-        <h3>△△雑貨店</h3>
-        <p>2F / 雑貨</p>
-      </li>
-    </ul>
+  <section class="p-event">
+    <div class="p-event__top">
+      <h2 class="p-eventTitle__wrap">
+        <span class="c-title__en">EVENT & CAMPAIGN</span>
+        <span class="c-title__jp u-mt--4">イベント&キャンペーン</span>
+      </h2>
+      <div class="p-eventBtn__wrap">
+        <a href="#" class="c-btn__shadow">MORE</a>
+        <a href="#" class="c-btn__shadow">CALENDER</a>
+      </div>
+    </div>
+    <div class="p-event__card--scroll">
+      <ul class="p-event__cardList">
+        <li class="p-event__cardList--item">
+          <a href="#" class="c-card__event">
+            <img class="c-card__img--event" src="images/thumb_01.jpg" alt="イベント">
+            <div class="c-card__tag">イベント</div>
+            <div class="c-card__title">タイトルタイトルタイトルタイトルタイトル</div>
+            <div class="c-card__period">2026年1月9日 ～ 2026年3月1日</div>
+          </a>
+        </li>
+        <li class="p-event__cardList--item">
+          <a href="#" class="c-card__event">
+            <img class="c-card__img--event" src="images/thumb_01.jpg" alt="イベント">
+            <div class="c-card__tag">タグ</div>
+            <div class="c-card__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
+            <div class="c-card__period">2026年1月9日 ～ 2026年3月1日</div>
+          </a>
+        </li>
+        <li class="p-event__cardList--item">
+          <a href="#" class="c-card__event">
+            <img class="c-card__img--event" src="images/thumb_01.jpg" alt="イベント">
+            <div class="c-card__tag">タグ</div>
+            <div class="c-card__title">タイトルタイトルタイトルタイトルタイトル</div>
+            <div class="c-card__period">2026年1月9日 ～ 2026年3月1日</div>
+          </a>
+        </li>
+        <li class="p-event__cardList--item">
+          <a href="#" class="c-card__event">
+            <img class="c-card__img--event" src="images/thumb_01.jpg" alt="イベント">
+            <div class="c-card__tag">タグ</div>
+            <div class="c-card__title">タイトルタイトルタイトルタイトルタイトル</div>
+            <div class="c-card__period">2026年1月9日 ～ 2026年3月1日</div>
+          </a>
+        </li>
+        <li class="p-event__cardList--item">
+          <a href="#" class="c-card__event">
+            <img class="c-card__img--event" src="images/thumb_01.jpg" alt="イベント">
+            <div class="c-card__tag">タグ</div>
+            <div class="c-card__title">タイトルタイトルタイトルタイトルタイトル</div>
+            <div class="c-card__period">2026年1月9日 ～ 2026年3月1日</div>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- ===================== Footer ===================== -->
@@ -149,10 +223,11 @@
     </ul>
     <p class="l-footer__copy">コピーライト</p>
   </footer>
-  <script src="https://unpkg.com/feather-icons"></script>
 
+  <script src="https://unpkg.com/feather-icons"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

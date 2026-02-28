@@ -7,12 +7,6 @@
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
 
-  // &::after {
-  //   content: "\f105";
-  //   font-family: "Font Awesome 5 Free";
-  //   font-weight: 900;
-  // }
-
   &:hover {
     color: v.$color-main;
     text-decoration: underline;

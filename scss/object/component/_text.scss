@@ -1,8 +1,41 @@
 @use "../../foundation/variable" as v;
 
 .c-text {
+  &--11px {
+    font-size: 11px;
+    color: v.$color-textMain;
+  }
+
+  &--13px {
+    font-size: 13px;
+    color: v.$color-textMain;
+  }
+
   &--15px {
     font-size: 15px;
     color: v.$color-textMain;
+  }
+}
+
+.c-text__keyword {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5px 6.5px;
+  width: 72px;
+  height: 32px;
+  font-size: 13px;
+  color: v.$color-textMain;
+  font-weight: 600;
+  background: #ebf4f9;
+  border-radius: 35px;
+  text-decoration: none;
+  letter-spacing: -1.2px;
+
+  &:hover {
+    color: #FFF;
+    font-weight: 600;
+    background: #4b91ca;
+    text-decoration: underline;
   }
 }

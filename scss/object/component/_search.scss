@@ -1,0 +1,39 @@
+.c-search {
+  &__input {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    width: 100%;
+    font-size: 16px;
+    padding: 4px 30px 4px 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 600;
+      color: #b9b9b9;
+    }
+  }
+
+  &__button {
+    border: none;
+
+    position: absolute;
+    right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #4b91ca;
+
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}

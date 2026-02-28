@@ -1,0 +1,17 @@
+@use "../../foundation/variable" as v;
+
+.c-title {
+  &__en {
+    color: v.$color-textMain;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__jp {
+    color: v.$color-textMain;
+    font-size: 14px;
+  }
+}
