@@ -1,6 +1,11 @@
 @use "../../foundation/variable" as v;
 
-.c-title {
+.c-sectionTitle {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__en {
     color: v.$color-textMain;
     font-size: 32px;
@@ -8,10 +13,12 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    line-height: 1.1;
   }
 
   &__jp {
     color: v.$color-textMain;
     font-size: 14px;
+    line-height: 1.1;
   }
 }

@@ -1,6 +1,11 @@
 @use "../../foundation/variable" as v;
 
 .c-btn {
+  &__wrap {
+    display: flex;
+    gap: 10px;
+  }
+
   &__shadow {
     display: flex;
     justify-content: center;

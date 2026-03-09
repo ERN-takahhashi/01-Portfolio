@@ -14,7 +14,7 @@
 @use "object/component/card";
 @use "object/component/globalNav";
 @use "object/component/img";
-@use "object/component/title";
+@use "object/component/sectionTitle";
 @use "object/component/utilityLink";
 @use "object/component/linkText";
 @use "object/component/relatedSite";
@@ -25,7 +25,8 @@
 //project
 @use "object/project/hero";
 @use "object/project/event";
-@use "object/project/shop";
+@use "object/project/newShop";
+@use "object/project/popupShop";
 @use "object/project/header" as p-header;
 @use "object/project/infoBar";
 @use "object/project/search" as p-search;

@@ -1,4 +1,6 @@
-.p-event {
+@use "../../foundation/variable" as v;
+
+.p-newShop {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +10,22 @@
     justify-content: space-between;
     align-items: center;
     width: 1000px;
+  }
+
+  &__card {
+    gap: 20px;
+  }
+
+  &__card--tab {
+    width: 1000px;
+    min-height: 45px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    padding: 11.2px;
+    background-color: v.$color-main;
+    border-radius: 10px 10px 0 0;
   }
 
   &__card--scroll {
@@ -23,23 +41,28 @@
   }
 
   &__cardItem {
-    padding: 5px;
     flex-shrink: 0;
   }
 
   &__card {
     display: flex;
-    flex-direction: column;
-    width: 280px;
-    height: 290px;
-    padding: 12px;
+    width: 450px;
+    height: 185px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 rgba(77, 77, 77, 0.3);
     background: #F5F5F5;
   }
 
   &__imgWrap {
-    position: relative;
-    width: 100%;
+    width: 153px;
+    height: 153px;
+  }
+
+  &__infoWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
