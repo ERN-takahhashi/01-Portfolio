@@ -22,6 +22,38 @@
   &--15 {
     margin-top: 15px;
   }
+
+  &--20 {
+    margin-top: 20px;
+  }
+
+  &--24 {
+    margin-top: 24px;
+  }
+
+  &--25d6 {
+    margin-top: 25.6px;
+  }
+
+  &--30 {
+    margin-top: 30px;
+  }
+
+  &--35 {
+    margin-top: 35px;
+  }
+
+  &--55 {
+    margin-top: 55px;
+  }
+
+  &--70 {
+    margin-top: 70px;
+  }
+
+  &--75 {
+    margin-top: 75px;
+  }
 }
 
 .u-mr {
@@ -34,6 +66,12 @@
   }
 }
 
+.u-mb {
+  &--25d6 {
+    margin-bottom: 25.6px;
+  }
+}
+
 .u-ml {
   &--20 {
     margin-left: 20px;
@@ -42,4 +80,12 @@
   &--50 {
     margin-left: 50px;
   }
+}
+
+.u-padding--15 {
+  padding: 15px;
+}
+
+.u-pt--30 {
+  padding-top: 30px;
 }

@@ -1,6 +1,62 @@
 @use "../../foundation/variable" as v;
 
 .c-card {
+  &__scroll {
+    display: flex;
+    width: 1000px;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 25px;
+  }
+
+  &__item {
+    flex: 0 0 280px;
+    padding: 5px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 280px;
+    height: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(77, 77, 77, 0.3);
+    background: #F5F5F5;
+
+    &:hover {
+      background: #eaf4fa;
+    }
+  }
+
+  &__ribbon {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1;
+    color: #FFF;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    background: linear-gradient(to right, #75c0df, #ace550);
+    padding: 9.5px 9.5px 9.5px 14px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      border-style: solid;
+      border-width: 0 15px 10px 0;
+      border-color: transparent #a6c674 transparent transparent;
+    }
+  }
+
+  &__imgWrap {
+    position: relative;
+    width: 100%;
+  }
 
   &__img {
     &--large {
@@ -13,7 +69,7 @@
 
     &--square {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 1 / 1;
       border-radius: 8px;
       object-fit: cover;
       border: 1px solid#dfdfdf;
@@ -33,12 +89,18 @@
     padding: 4.2px 7px;
   }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__tag {
     font-size: 11px;
     font-weight: bold;
+    line-height: 1.1;
     color: #FFF;
-    background-color: v.$color-textMain;
-    border-radius: 30px;
+    background: v.$color-textMain;
+    border-radius: 999px;
     padding: 2px 11px;
     align-self: flex-start;
   }
@@ -48,7 +110,7 @@
     font-size: 11px;
     font-weight: bold;
     color: #FFF;
-    background-color: v.$color-textMain;
+    background: #6D94BD;
     border-radius: 30px;
     padding: 4.4px 6px;
     line-height: 1.2;
@@ -62,7 +124,13 @@
 
   &__title {
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
+    color: v.$color-textMain;
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 500;
     color: v.$color-textMain;
   }
 
@@ -70,6 +138,7 @@
     height: 18px;
     font-size: 12px;
     line-height: 1.6;
+    font-weight: 500;
     color: v.$color-textSub;
   }
 }

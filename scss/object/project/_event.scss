@@ -9,37 +9,4 @@
     align-items: center;
     width: 1000px;
   }
-
-  &__card--scroll {
-    width: 1000px;
-    overflow-x: auto;
-    padding-bottom: 8px;
-  }
-
-  &__cardList {
-    display: flex;
-    gap: 20px;
-    min-width: max-content;
-  }
-
-  &__cardItem {
-    padding: 5px;
-    flex-shrink: 0;
-  }
-
-  &__card {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    height: 290px;
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 0 rgba(77, 77, 77, 0.3);
-    background: #F5F5F5;
-  }
-
-  &__imgWrap {
-    position: relative;
-    width: 100%;
-  }
 }

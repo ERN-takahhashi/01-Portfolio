@@ -1,0 +1,19 @@
+.p-trend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__swiper {
+    width: 100%;
+    overflow: hidden;
+
+    .swiper-slide {
+      width: 310px;
+    }
+  }
+
+  &__swiperWrapper {
+    display: flex;
+    transition-timing-function: linear;
+  }
+}

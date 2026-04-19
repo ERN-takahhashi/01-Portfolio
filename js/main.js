@@ -4,7 +4,7 @@ feather.replace();
 //mv部分
 const swiper = new Swiper('.p-hero', {
   slidesPerView: 'auto',
-  spaceBetween: 80,          // 画像間（矢印用）
+  spaceBetween: 25,          // 画像間（矢印用）
   centeredSlides: true,
   loop: true,               // ← 無限ループ
   speed: 800,               // スライド速度（ms）
@@ -24,4 +24,28 @@ const swiper = new Swiper('.p-hero', {
     el: '.swiper-pagination',
     clickable: true,
   },
+});
+
+const categories = document.querySelectorAll(".p-shopNews__category");
+categories.forEach(function (category) {
+  category.addEventListener("click", function () {
+
+    categories.forEach(function (item) {
+      item.classList.remove("is-active");
+    });
+
+    category.classList.add("is-active");
+  });
+});
+
+
+const swiper2 = new Swiper('.p-trend__swiper', {
+  loop: true,
+  spaceBetween: 40,
+  speed: 10000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 'auto',
 });

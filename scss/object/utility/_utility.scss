@@ -1,3 +1,27 @@
+.u-height--210 {
+  height: 210px;
+}
+
+.u-height--270 {
+  height: 270px;
+}
+
+.u-height--290 {
+  height: 290px;
+}
+
+.u-height--290 {
+  height: 290px;
+}
+
+.u-height--410 {
+  height: 410px;
+}
+
+.u-width--310 {
+  width: 310px;
+}
+
 .u-bold--700 {
   font-weight: 700;
 }
@@ -8,4 +32,65 @@
 
 .u-bgc--tag1 {
   background-color: #6D94BD;
+}
+
+.u-category {
+  &--fashion {
+    --icon-color: #7794bb;
+    --circle-color: #bdcfe8;
+  }
+
+  &--sweet {
+    --icon-color: #ba7c8e;
+    --circle-color: #eec7d1;
+  }
+
+  &--meal {
+    --icon-color: #c3a76e;
+    --circle-color: #f7e0b4;
+  }
+
+  &--info {
+    --icon-color: #94af6d;
+    --circle-color: #cadcaf;
+  }
+
+  &--ticket {
+    --icon-color: #79afb0;
+    --circle-color: #b3d9da;
+  }
+}
+
+.u-color {
+  &--fashion {
+    background: #7794bb;
+  }
+
+  &--sweet {
+    background: #ba7c8e;
+  }
+
+  &--meal {
+    background: #c3a76e;
+  }
+
+  &--info {
+    background: #94af6d;
+  }
+
+  &--ticket {
+    background: #79afb0;
+  }
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-z--1 {
+  z-index: 1;
+}
+
+.u-al--center {
+  align-items: center;
 }

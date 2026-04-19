@@ -1,0 +1,73 @@
+@use "../../foundation/variable" as v;
+
+.p-shopNews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+  }
+
+  &__category {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__categoryTitle {
+    display: flex;
+    align-items: center;
+    height: 41.6px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: v.$color-textSub;
+    text-align: center;
+  }
+
+  &__categoryIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: var(--circle-color);
+    border-radius: 50%;
+  }
+}
+
+.p-shopNews__category::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid var(--circle-color);
+  opacity: 0;
+}
+
+
+.p-shopNews__category.is-active::after {
+  opacity: 1;
+}

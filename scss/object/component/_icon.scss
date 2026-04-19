@@ -20,18 +20,26 @@ svg.feather-map-pin {
   color: v.$color-textMain;
 }
 
-.c-icon {
+.c-icon--clock {
+  width: 38px;
+  height: 38px;
+  padding: 5px;
+  color: #fff;
+  stroke-width: 2;
+  background-color: #4b91ca;
+  border-radius: 50%;
+}
+
+.c-icon--search {
+  width: 30px;
+  height: 30px;
   color: #fff;
   stroke-width: 3;
+  border-radius: 50%;
+}
 
-  &--clock {
-    width: 38px;
-    height: 38px;
-    padding: 5px;
-    color: #fff;
-    stroke-width: 2;
-    background-color: #4b91ca;
-    border-radius: 50%;
-
-  }
+.c-icon--shopNews {
+  width: 45px;
+  height: 45px;
+  fill: var(--icon-color);
 }
