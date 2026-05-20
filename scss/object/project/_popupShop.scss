@@ -12,43 +12,6 @@
     width: 1000px;
   }
 
-  &__tabs {
-    display: flex;
-    gap: 10px;
-    border-bottom: 2px solid v.$color-main;
-
-  }
-
-  &__tab {
-    flex: 1;
-    width: 495px;
-    text-align: center;
-    cursor: pointer;
-    color: #FFF;
-    font-weight: bold;
-    line-height: 1.2;
-    padding: 11.2px;
-    background-color: v.$color-main;
-    border-radius: 10px 10px 0 0;
-
-  }
-
-  &__card {
-    gap: 20px;
-  }
-
-  &__card--tab {
-    width: 1000px;
-    min-height: 45px;
-    color: #FFF;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.2;
-    padding: 11.2px;
-    background-color: v.$color-main;
-    border-radius: 10px 10px 0 0;
-  }
-
   &__card--scroll {
     width: 1000px;
     overflow-x: auto;
@@ -73,6 +36,7 @@
     border-radius: 10px;
     box-shadow: 0 0 5px 0 rgba(77, 77, 77, 0.3);
     background: #F5F5F5;
+    gap: 20px
   }
 
   &__imgWrap {

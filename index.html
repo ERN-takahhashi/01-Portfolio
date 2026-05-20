@@ -77,6 +77,45 @@
     </div>
   </header>
 
+  <!-- <div class="l-header__show">
+    <div class="l-header__top">
+      <div class="l-header__top--left">
+        <div class="p-header__logo u-mr--50">
+          <a href="/">
+            <img class="c-logo" width="213" height="37" src="images/logo_Takahashi.png" alt="奥多摩ウミマチ">
+          </a>
+        </div>
+      </div>
+      <nav class="c-globalNav">
+        <ul class="c-globalNav__list u-height--38">
+          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">イベントキャンペーン</a>
+          </li>
+          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">ショップ</a></li>
+          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">グルメ</a></li>
+          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">フロアガイド</a></li>
+        </ul>
+      </nav>
+      <div class="l-header__top--right">
+        <div class="p-header__utility">
+          <a href="/" class="c-utilityLink">
+            <span class="c-linkText__utility">LANGUAGE</span>
+            <i data-feather="globe"></i>
+          </a>
+          <a href="/" class="c-utilityLink">
+            <span class="c-linkText__utility">ACCESS</span>
+            <i data-feather="map-pin"></i>
+          </a>
+          <a href="/" class="c-utilityLink">
+            <span class="c-linkText__utility">MENU</span>
+            <i data-feather="menu"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
   <div class="p-hero-wrap u-mt--35">
     <section class="p-hero">
       <div class="swiper-wrapper">
@@ -301,27 +340,89 @@
         <a href="#" class="c-btn__shadow">CALENDER</a>
       </div>
     </div>
-    <div class="p-popupShop__tabs u-mt--25d6">
-      <div class="p-popupShop__tab">開催中</div>
-      <div class="p-popupShop__tab">開催予定</div>
-    </div>
-    <div id="tab1" class="p-popupShop__tabContent">
-      <div class="p-popupShop__card--scroll u-pt--30">
-        <ul class="p-popupShop__cardList">
-          <li class="p-popupShop__cardItem">
-            <a href="#" class="p-popupShop__card">
-              <div class="p-popupShop__imgWrap">
-                <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-              </div>
-              <div class="p-popupShop__infoWrap">
-                <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-                <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-                <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-                <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-              </div>
-            </a>
-          </li>
-        </ul>
+    <div class="c-tab__area">
+      <div class="c-tab__buttons u-mt--25d6">
+        <button type="button" class="c-tab__button u-width--495 is-active" data-tab="popup-tab1">開催中</button>
+        <button type="button" class="c-tab__button u-width--495" data-tab="popup-tab2">開催予定</button>
+      </div>
+      <!-- 開催中  -->
+      <div id="popup-tab1" class="c-tab__content is-active">
+        <div class="p-popupShop__card--scroll u-pt--30">
+          <ul class="p-popupShop__cardList">
+            <li class="p-popupShop__cardItem">
+              <a href="#" class="p-popupShop__card">
+                <div class="p-popupShop__imgWrap">
+                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                </div>
+                <div class="p-popupShop__infoWrap">
+                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                </div>
+              </a>
+            </li>
+            <li class="p-popupShop__cardItem">
+              <a href="#" class="p-popupShop__card">
+                <div class="p-popupShop__imgWrap">
+                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                </div>
+                <div class="p-popupShop__infoWrap">
+                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                </div>
+              </a>
+            </li>
+            <li class="p-popupShop__cardItem">
+              <a href="#" class="p-popupShop__card">
+                <div class="p-popupShop__imgWrap">
+                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                </div>
+                <div class="p-popupShop__infoWrap">
+                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 開催予定 -->
+      <div id="popup-tab2" class="c-tab__content">
+        <div class="p-popupShop__card--scroll u-pt--30">
+          <ul class="p-popupShop__cardList">
+            <li class="p-popupShop__cardItem">
+              <a href="#" class="p-popupShop__card">
+                <div class="p-popupShop__imgWrap">
+                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                </div>
+                <div class="p-popupShop__infoWrap">
+                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                </div>
+              </a>
+            </li>
+            <li class="p-popupShop__cardItem">
+              <a href="#" class="p-popupShop__card">
+                <div class="p-popupShop__imgWrap">
+                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                </div>
+                <div class="p-popupShop__infoWrap">
+                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -691,14 +792,196 @@
       <a href="#" class="c-btn__shadow">MORE</a>
     </div>
   </section>
-  <!-- ===================== Footer ===================== -->
+
+  <section class="p-recommend">
+    <h2 class="c-sectionTitle__wrap u-al--center u-mt--70">
+      <span class="c-sectionTitle__en">おすすめ情報</span>
+    </h2>
+    <div class="p-recommend__wrap">
+      <a href="#" class="p-recommend__item">
+        <img src="images/thumb_01.jpg" class="p-recommend__img" alt="おすすめ情報">
+      </a>
+      <a href="#" class="p-recommend__item">
+        <img src="images/thumb_01.jpg" class="p-recommend__img" alt="おすすめ情報">め情報">
+      </a>
+      <a href="#" class="p-recommend__item">
+        <img src="images/thumb_01.jpg" class="p-recommend__img" alt="おすすめ情報">
+      </a>
+      <a href="#" class="p-recommend__item">
+        <img src="images/thumb_01.jpg" class="p-recommend__img" alt="おすすめ情報">
+      </a>
+    </div>
+  </section>
+
+  <section class="p-announce u-mt--55">
+    <div class="p-announce__top">
+      <h2 class="c-sectionTitle__wrap">
+        <span class="c-sectionTitle__en">タカハシからのお知らせ</span>
+      </h2>
+      <div class="c-btn__wrap">
+        <a href="#" class="c-btn__shadow">MORE</a>
+      </div>
+    </div>
+    <div class="c-tab__area">
+      <div class="c-tab__buttons u-mt--25d6">
+        <button type="button" class="c-tab__button is-active" data-tab="announce-tab1">すべて</button>
+        <button type="button" class="c-tab__button" data-tab="announce-tab2">タカハシからのお知らせ</button>
+        <button type="button" class="c-tab__button" data-tab="announce-tab3">ニュースリリース</button>
+      </div>
+      <div id="announce-tab1" class="c-tab__content is-active">
+        <ul class="p-announce__news">
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年4月30日</span>
+            <span class="p-announce__newsTitle"><a href="#"
+                class="p-announce__newslink">奥多摩タカハシ　2025年度　過去最高売上600億円達成</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年4月20日</span>
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカミネタウン
+                開業１４周年イベント</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年3月25日</span>
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカミネタウンのＧＷイベント</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年3月24日</span>
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカハシ フードマルシェ全面リニューアル -第一弾-
+              </a></span>
+          </li>
+        </ul>
+      </div>
+      <div id="announce-tab2" class="c-tab__content">
+        <ul class="p-announce__news">
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag u-color--blue">お知らせ</span>
+            <span class="p-announce__newsDate">2024年5月22日</span>
+            <span class="p-announce__newsTitle"><a href="#"
+                class="p-announce__newslink">奥多摩タカミネタウンは開業１２周年を迎えました。</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag u-color--blue">お知らせ</span>
+            <span class="p-announce__newsDate">2024年3月1日</span>
+            <span class="p-announce__newsTitle"><a href="#"
+                class="p-announce__newslink">奥多摩タカハシのホームページがリニューアルしました</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag u-color--blue">お知らせ</span>
+            <span class="p-announce__newsDate">2024年2月21日</span>
+            <span class="p-announce__newsTitle"><a href="#"
+                class="p-announce__newslink">奥多摩タカミネタウンにおけるエネルギー‟地産地消”の取組み</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag u-color--blue">お知らせ</span>
+            <span class="p-announce__newsDate">2023年4月28日</span>
+            <span class="p-announce__newsTitle"><a href="#"
+                class="p-announce__newslink">タカミネシャトル下野・深草線のりば変更について</a></span>
+          </li>
+        </ul>
+      </div>
+      <div id="announce-tab3" class="c-tab__content">
+        <ul class="p-announce__news">
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年4月30日</span>
+            <span class="p-announce__newsTitle"><a href="#"
+                class="p-announce__newslink">奥多摩タカハシ　2025年度　過去最高売上600億円達成</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年4月20日</span>
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカミネタウン
+                開業１４周年イベント</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年3月25日</span>
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカミネタウンのＧＷイベント</a></span>
+          </li>
+          <li class="p-announce__newsItem">
+            <span class="p-announce__newsTag">リリース情報</span>
+            <span class="p-announce__newsDate">2026年3月24日</span>
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカハシ フードマルシェ全面リニューアル -第一弾-
+              </a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-areaInfo u-mt--55">
+    <h2 class="c-sectionTitle__wrap u-al--center u-mt--70 u-mb--33">
+      <span class="c-sectionTitle__jp u-fontSize--33 u-bold"><span class="u-fontSize--43">周辺施設</span>のご案内</span>
+    </h2>
+    <div class="p-areaInfo__cardList">
+      <a href="#" class="p-areaInfo__card">
+        <p class="p-areaInfo__title">奥多摩タカハシ</p>
+        <div class="p-areaInfo__circle">
+          <img src="images/thumb_01.jpg" class="p-areaInfo__img" alt="おすすめ情報">
+        </div>
+      </a>
+      <a href="#" class="p-areaInfo__card">
+        <p class="p-areaInfo__title">奥多摩タカミネ<br>イーストタワー</p>
+        <div class="p-areaInfo__circle">
+          <img src="images/thumb_01.jpg" class="p-areaInfo__img" alt="おすすめ情報">
+        </div>
+      </a>
+      <a href="#" class="p-areaInfo__card">
+        <p class="p-areaInfo__title">奥多摩タカハシ</p>
+        <div class="p-areaInfo__circle">
+          <img src="images/thumb_01.jpg" class="p-areaInfo__img" alt="おすすめ情報">
+        </div>
+      </a>
+    </div>
+    <h3 class="p-areaInfo__subtitle u-mt--60">奥多摩タカミネタウン施設</h3>
+    <div class="p-areaInfo__links">
+      <a href="#" class="p-areaInfo__link"><img src="images/thumb_01.jpg" class="p-areaInfo__img" alt=" 水族館"></a>
+      <a href="#" class="p-areaInfo__link"><img src="images/thumb_01.jpg" class="p-areaInfo__img" alt=" 水族館"></a>
+      <a href="#" class="p-areaInfo__link"><img src="images/thumb_01.jpg" class="p-areaInfo__img" alt=" 水族館"></a>
+    </div>
+    <h3 class="p-areaInfo__subtitle u-mt--45">法人向け</h3>
+    <div class="p-areaInfo__links u-mb--110">
+      <a href="#" class="p-areaInfo__link"><img src="images/thumb_01.jpg" class="p-areaInfo__img" alt=" 水族館"></a>
+      <a href="#" class="p-areaInfo__link"><img src="images/thumb_01.jpg" class="p-areaInfo__img" alt=" 水族館"></a>
+    </div>
+  </section>
+
   <footer class="l-footer">
-    <ul class="l-footer__nav">
-      <li><a href="#">施設案内</a></li>
-      <li><a href="#">会社概要</a></li>
-      <li><a href="#">プライバシーポリシー</a></li>
-    </ul>
-    <p class="l-footer__copy">コピーライト</p>
+    <div class="p-footer__inner">
+      <div class="p-footer__top">
+        <div class="p-footer__topInner">
+          <a href="#" class="p-footer__logo"><img src="images/thumb_01.jpg" class="p-footer__logoImg" alt="ロゴ"></a>
+          <div class="p-footer__topNav">
+            <p class="p-footer__navTitle">東武グループの商業施設</p>
+            <ul class="p-footer__navList">
+              <li><a class="p-footer__navLink" href="#">エキミセ</a></li>
+              <li><a class="p-footer__navLink" href="#">西新井TOSCA</a></li>
+              <li><a class="p-footer__navLink" href="#">草加VARIE</a></li>
+              <li><a class="p-footer__navLink" href="#">新越谷VARIE</a></li>
+              <li><a class="p-footer__navLink" href="#">エキア</a></li>
+              <li><a class="p-footer__navLink" href="#">東武百貨店</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="p-footer__btm">
+        <ul class="p-footer__btmList">
+          <li><a class="p-footer__btmLink" href="#">会社概要</a></li>
+          <li><a class="p-footer__btmLink" href="#">プライバシーポリシー</a></li>
+          <li><a class="p-footer__btmLink" href="#">公式SNSのご案内</a></li>
+          <li><a class="p-footer__btmLink" href="#">個人情報の取り扱いについて</a></li>
+          <li><a class="p-footer__btmLink" href="#">サイトのご利用について</a></li>
+          <li><a class="p-footer__btmLink" href="#">推奨環境</a></li>
+          <li><a class="p-footer__btmLink" href="#">サイトマップ</a></li>
+        </ul>
+        <p class="p-footer__btmTitle">COPYRIGHT © TOBU RAILWAY CO., LTD.& TOBU TOWN SOLAMACHI CO., LTD.ALL RIGHTS
+          RESERVED.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://unpkg.com/feather-icons"></script>

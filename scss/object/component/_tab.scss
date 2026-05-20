@@ -1,0 +1,50 @@
+@use "../../foundation/variable" as v;
+
+.c-tab {
+  &__container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__button {
+    flex: 1;
+    text-align: center;
+    color: v.$color-main;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 11.2px;
+    background-color: #FFF;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+  }
+
+  &__button.is-active {
+    color: #FFF;
+    background-color: v.$color-main;
+  }
+
+  &__content {
+    display: none;
+    border-top: 2px solid v.$color-main;
+  }
+
+  &__content.is-active {
+    display: block;
+    animation: fade 1.0s ease;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+    }
+}

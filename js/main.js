@@ -49,3 +49,27 @@ const swiper2 = new Swiper('.p-trend__swiper', {
   },
   slidesPerView: 'auto',
 });
+
+
+document.querySelectorAll('.c-tab__area').forEach(tabArea => {
+
+  const buttons = tabArea.querySelectorAll('.c-tab__button');
+  const contents = tabArea.querySelectorAll('.c-tab__content');
+
+  buttons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+      buttons.forEach(btn => btn.classList.remove('is-active'));
+      contents.forEach(content => {
+        content.classList.remove('is-active');
+      });
+
+      button.classList.add('is-active');
+
+      const target = button.dataset.tab;
+      tabArea.querySelector('#' + target)
+        .classList.add('is-active');
+    });
+  });
+});

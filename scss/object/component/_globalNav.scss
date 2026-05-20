@@ -3,12 +3,12 @@
 .c-globalNav {
   background-color: #d5e6ed;
   border-radius: 9999px;
-  padding: 9px 0;
 
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
   }
 
   &__item {
@@ -35,8 +35,7 @@
 
   &__text {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     line-height: 1.2;
     font-size: 15px;
     font-weight: 600;

@@ -21,6 +21,7 @@
 @use "object/component/icon";
 @use "object/component/text";
 @use "object/component/search";
+@use "object/component/tab";
 
 //project
 @use "object/project/hero";
@@ -32,6 +33,10 @@
 @use "object/project/header" as p-header;
 @use "object/project/infoBar";
 @use "object/project/search" as p-search;
+@use "object/project/recommend";
+@use "object/project/announce";
+@use "object/project/areaInfo";
+@use "object/project/footer" as p-footer;
 
 //utility
 @use "object/utility/gap";

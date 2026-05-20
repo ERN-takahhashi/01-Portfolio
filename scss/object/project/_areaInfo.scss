@@ -1,0 +1,82 @@
+@use "../../foundation/variable" as v;
+
+.p-areaInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__cardList {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    justify-content: center;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: #7dc1e8;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &__card:hover {
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &__card:hover &__title {
+    text-decoration: underline;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 87.1875px;
+    padding: 15px;
+    font-size: 22px;
+  }
+
+  &__circle {
+    width: 223px;
+    height: 223px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 6px 0 rgba(77, 77, 77, 0.3);
+  }
+
+  &__circle &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__subtitle {
+    font-size: 27px;
+    color: #2893cf;
+    margin-bottom: 21.6px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    display: block;
+    width: 313px;
+    height: 101px;
+    border: 1px solid v.$color-textMain;
+  }
+
+  &__link &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

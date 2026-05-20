@@ -1,0 +1,106 @@
+.p-footer {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 0;
+    background: #2893cf;
+  }
+
+  &__topInner {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__logo {
+    display: block;
+    width: 102px;
+    height: 61px;
+  }
+
+  &__logoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__topNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__navTitle {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    padding: 0 3px;
+    font-feature-settings: 'palt';
+    font-weight: 500;
+  }
+
+  &__navList {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__navLink {
+    font-size: 14px;
+    color: #FFF;
+    font-feature-settings: 'palt';
+    font-weight: 500;
+  }
+
+  &__navLink:hover {
+    text-decoration: underline;
+  }
+
+  &__navLink::before {
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    transform: rotate(45deg) translateY(-2px);
+    margin-right: 8px;
+  }
+
+  &__btm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4d4d4d;
+    padding: 10px 0;
+  }
+
+
+  &__btmList {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__btmLink {
+    font-size: 14px;
+    color: #FFF;
+    font-feature-settings: 'palt';
+    font-weight: 500;
+  }
+
+  &__btmLink:hover {
+    text-decoration: underline;
+  }
+
+  &__btmTitle {
+    font-size: 14px;
+    color: #FFF;
+    font-feature-settings: 'palt';
+    font-weight: 500;
+    margin-top: 4.2px;
+  }
+}
