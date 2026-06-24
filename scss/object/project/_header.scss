@@ -12,4 +12,39 @@
   &__links {
     gap: 25px;
   }
+
+  &__show {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 2px solid #a2d6e4;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+
+    z-index: 1000;
+
+    &.is-show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__showInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 65px;
+    background-color: #FFF;
+  }
 }

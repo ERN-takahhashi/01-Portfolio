@@ -1,18 +1,17 @@
 'use strict';
 feather.replace();
 
-//mv部分
 const swiper = new Swiper('.p-hero', {
   slidesPerView: 'auto',
-  spaceBetween: 25,          // 画像間（矢印用）
+  spaceBetween: 25,
   centeredSlides: true,
-  loop: true,               // ← 無限ループ
-  speed: 800,               // スライド速度（ms）
+  loop: true,
+  speed: 800,
 
   autoplay: {
-    delay: 3000,            // 3秒ごとに自動再生
-    disableOnInteraction: false, // 操作後も止まらない
-    pauseOnMouseEnter: true,     // ホバーで一時停止（任意）
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
 
   navigation: {
@@ -72,4 +71,13 @@ document.querySelectorAll('.c-tab__area').forEach(tabArea => {
         .classList.add('is-active');
     });
   });
+});
+
+const stickyHeader = document.querySelector('.p-header__show');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) {
+    stickyHeader.classList.add('is-show');
+  } else {
+    stickyHeader.classList.remove('is-show');
+  }
 });

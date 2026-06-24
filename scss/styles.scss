@@ -36,8 +36,10 @@
 @use "object/project/recommend";
 @use "object/project/announce";
 @use "object/project/areaInfo";
+@use "object/project/bg";
 @use "object/project/footer" as p-footer;
 
 //utility
 @use "object/utility/gap";
 @use "object/utility/utility";
+@use "object/utility/deco";

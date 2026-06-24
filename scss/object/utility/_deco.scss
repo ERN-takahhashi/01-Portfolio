@@ -1,0 +1,32 @@
+.u-bg__decoWrap {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.u-bg__deco {
+  &--1 {
+    width: 460px;
+    position: absolute;
+    top: 155px;
+    left: -140px;
+    object-fit: cover;
+  }
+
+  &--2 {
+    width: 248px;
+    position: absolute;
+    top: -45px;
+    right: -140px;
+    object-fit: cover;
+  }
+
+  &--3 {
+    height: 125px;
+    position: absolute;
+    top: 65px;
+    left: -350px;
+    object-fit: cover;
+  }
+}

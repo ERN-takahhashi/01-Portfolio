@@ -1,14 +1,13 @@
 @use "../../foundation/variable" as v;
 
 .c-globalNav {
-  background-color: #d5e6ed;
-  border-radius: 9999px;
-
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    min-height: 50px;
+    background-color: #d5e6ed;
+    border-radius: 9999px;
   }
 
   &__item {
@@ -38,12 +37,12 @@
     justify-content: center;
     line-height: 1.2;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    font-feature-settings: "palt";
     color: v.$color-textMain;
 
     &:hover {
       text-decoration: underline;
     }
   }
-
 }

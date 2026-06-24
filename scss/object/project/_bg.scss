@@ -1,0 +1,29 @@
+.p-bg__blue {
+  background-color: #a2d6e4;
+  overflow: hidden;
+}
+
+.p-bg__decoWrap {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.p-bg__deco {
+  &--1 {
+    width: 460px;
+    position: absolute;
+    top: 155px;
+    left: -140px;
+    object-fit: cover;
+  }
+
+  &--2 {
+    width: 248px;
+    position: absolute;
+    top: -45px;
+    right: -140px;
+    object-fit: cover;
+  }
+}

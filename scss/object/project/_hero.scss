@@ -20,13 +20,13 @@
 }
 
 .p-hero .swiper-slide {
-  width: 437px;
+  width: 473px;
   flex-shrink: 0;
 }
 
 .p-hero .swiper-slide img {
   display: block;
-  width: 437px;
+  width: 473px;
   height: 318px;
   object-fit: cover;
 }
@@ -68,7 +68,7 @@
 .p-hero-wrap .swiper-button-prev {
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-left: -226px;
+  margin-left: -243px;
 
   &::before {
     transform: rotate(-135deg);
@@ -79,7 +79,7 @@
 .p-hero-wrap .swiper-button-next {
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-left: 226px;
+  margin-left: 243px;
 
   &::before {
     transform: rotate(45deg);
@@ -88,7 +88,8 @@
 
 .p-hero-wrap .swiper-pagination {
   position: relative;
-  margin-top: 24px;
+  margin-top: 27px;
+  padding: 10px 0;
   text-align: center;
 }
 

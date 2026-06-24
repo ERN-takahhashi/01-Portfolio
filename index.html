@@ -14,13 +14,13 @@
 </head>
 
 <body>
-  <header class="l-header">
+  <header class="l-header u-mb--33">
     <div class="l-headerInner">
       <div class="l-header__top">
         <div class="l-header__top--left">
           <div class="p-header__logo u-mr--50">
-            <a href="/">
-              <img class="c-logo" width="213" height="37" src="images/logo_Takahashi.png" alt="奥多摩ウミマチ">
+            <a href="/" class="c-logo__link">
+              <img class="c-logo__img" src="images/logo_Takahashi.png" alt="奥多摩タカハシ">
             </a>
           </div>
           <nav class="p-header__links" aria-label="関連施設">
@@ -77,42 +77,37 @@
     </div>
   </header>
 
-  <!-- <div class="l-header__show">
-    <div class="l-header__top">
-      <div class="l-header__top--left">
-        <div class="p-header__logo u-mr--50">
-          <a href="/">
-            <img class="c-logo" width="213" height="37" src="images/logo_Takahashi.png" alt="奥多摩ウミマチ">
-          </a>
-        </div>
-      </div>
+  <div class="p-header__show">
+    <div class="p-header__showInner">
+      <a href="/" class="c-logo__link">
+        <img class="c-logo__img" src="images/logo_Takahashi.png" alt="奥多摩タカハシ">
+      </a>
       <nav class="c-globalNav">
-        <ul class="c-globalNav__list u-height--38">
-          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">イベントキャンペーン</a>
+        <ul class=" c-globalNav__list u-height--38">
+          <li class="c-globalNav__item u-width--142"><a href="#" class="c-globalNav__text c-text--11px">イベントキャンペーン</a>
           </li>
-          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">ショップ</a></li>
-          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">グルメ</a></li>
-          <li class="c-globalNav__item u-width--166"><a href="#" class="c-globalNav__text c-text--11px">フロアガイド</a></li>
+          <li class="c-globalNav__item u-width--142"><a href="#" class="c-globalNav__text c-text--11px">ショップ</a></li>
+          <li class="c-globalNav__item u-width--142"><a href="#" class="c-globalNav__text c-text--11px">グルメ</a></li>
+          <li class="c-globalNav__item u-width--142"><a href="#" class="c-globalNav__text c-text--11px">フロアガイド</a></li>
         </ul>
       </nav>
-      <div class="l-header__top--right">
-        <div class="p-header__utility">
-          <a href="/" class="c-utilityLink">
-            <span class="c-linkText__utility">LANGUAGE</span>
-            <i data-feather="globe"></i>
-          </a>
-          <a href="/" class="c-utilityLink">
-            <span class="c-linkText__utility">ACCESS</span>
-            <i data-feather="map-pin"></i>
-          </a>
-          <a href="/" class="c-utilityLink">
-            <span class="c-linkText__utility">MENU</span>
-            <i data-feather="menu"></i>
-          </a>
-        </div>
+      <div class="p-header__utility">
+        <a href="/" class="c-utilityLink">
+          <span class="c-linkText__utility">LANGUAGE</span>
+          <i data-feather="globe"></i>
+        </a>
+        <a href="/" class="c-utilityLink">
+          <span class="c-linkText__utility">ACCESS</span>
+          <i data-feather="map-pin"></i>
+        </a>
+        <a href="/" class="c-utilityLink">
+          <span class="c-linkText__utility">MENU</span>
+          <i data-feather="menu"></i>
+        </a>
       </div>
     </div>
-  </div> -->
+  </div>
+
 
 
 
@@ -160,271 +155,279 @@
     </section>
   </div>
 
-  <section class="p-infoBar u-mt--20">
-    <div class="p-infoBar__inner">
-      <div class="p-infoBar__inner--row">
-        <div class="p-infoBar__time">
-          <span class="p-infoBar__time--icon">
-            <i data-feather="clock" class="c-icon--clock"></i></span>
-          <span class="p-infoBar__time--label">営業時間
-          </span>
-          <strong class="p-infoBar__time--timeMain">10:00〜20:00</strong>
-          <p class="c-text--11px u-ml--20">6F・7F・30F・31F 飲食店舗 11:00 - 23:00
-            <br>※一部店舗によって営業時間が異なります。詳しくは各店の詳細ページをご覧ください。
-          </p>
+  <section class="p-bg__blue u-pt--20">
+    <div class="u-bg__decoWrap" aria-hidden="true">
+      <img class="u-bg__deco--1" src="images/deco_cloud_01.png" alt="">
+      <img class="u-bg__deco--2" src="images/deco_sun.png" alt="">
+    </div>
+    <section class="p-infoBar">
+      <div class="p-infoBar__inner">
+        <div class="p-infoBar__inner--row">
+          <div class="p-infoBar__time">
+            <span class="p-infoBar__time--icon">
+              <i data-feather="clock" class="c-icon--clock"></i></span>
+            <span class="p-infoBar__time--label">営業時間
+            </span>
+            <strong class="p-infoBar__time--timeMain">10:00〜20:00</strong>
+            <p class="c-text--11px u-ml--20">6F・7F・30F・31F 飲食店舗 11:00 - 23:00
+              <br>※一部店舗によって営業時間が異なります。詳しくは各店の詳細ページをご覧ください。
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="p-search u-mt--15">
-    <form class="p-search__form">
-      <input class="c-search__input" type="text" name="search" placeholder="フリーワード検索">
-      <button class="c-search__button" type="submit">
-        <i data-feather="search" class="c-icon--search"></i></button>
-    </form>
-    <div class="p-search__keyword">
-      <span class="c-text--13px u-bold--700">リアルタイム<br>人気キーワード</span>
-      <ul class="p-search__keywordList">
-        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">レストラン</a></li>
-        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">ポケモン</a></li>
-        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">ちいかわ</a></li>
-        <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">カフェ</a></li>
+    <section class="p-search u-mt--15">
+      <form class="p-search__form">
+        <input class="c-search__input" type="text" name="search" placeholder="フリーワード検索">
+        <button class="c-search__button" type="submit">
+          <i data-feather="search" class="c-icon--search"></i></button>
+      </form>
+      <div class="p-search__keyword">
+        <span class="c-text--13px u-bold--700">リアルタイム<br>人気キーワード</span>
+        <ul class="p-search__keywordList">
+          <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">レストラン</a></li>
+          <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">テラモン</a></li>
+          <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">ぎゃんかわ</a></li>
+          <li class="p-search__keywordList--item"><a href="#" class="c-text__keyword">カフェ</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p-event u-mt--70">
+      <div class="p-event__top">
+        <h2 class="c-sectionTitle__wrap">
+          <span class="c-sectionTitle__en">EVENT & CAMPAIGN</span>
+          <span class="c-sectionTitle__jp u-mt--4">イベント&キャンペーン</span>
+        </h2>
+        <div class="c-btn__wrap">
+          <a href="#" class="c-btn__shadow">MORE</a>
+          <a href="#" class="c-btn__shadow">CALENDER</a>
+        </div>
+      </div>
+      <ul class="c-card__scroll u-mt--25d6">
+        <li class="c-card__item">
+          <a href="#" class="c-card__body u-height--290">
+            <div class="c-card__imgWrap">
+              <div class="c-card__badge u-bgc--darkred">NEW</div>
+              <img class="c-card__img--large" src="images/event_1.jpg" alt="イベント">
+            </div>
+            <div class="c-card__info u-mt--10">
+              <div class="c-card__tag">イベント／お得情報</div>
+              <div class="c-card__title u-mt--8d4">パンとコーヒーフェア</div>
+              <div class="c-card__period u-mt--4d8">2026年1月15日～2026年2月12日</div>
+            </div>
+          </a>
+        </li>
+        <li class="c-card__item">
+          <a href="#" class="c-card__body u-height--290">
+            <div class="c-card__imgWrap">
+              <div class="c-card__badge u-bgc--darkred">NEW</div>
+              <img class="c-card__img--large" src="images/event_2.jpg" alt="イベント">
+            </div>
+            <div class="c-card__info u-mt--10">
+              <div class="c-card__tag">イベント／お得情報</div>
+              <div class="c-card__title u-mt--8d4">世界のワイン＆チーズ</div>
+              <div class="c-card__period u-mt--4d8">2026年2月3日～2026年3月20日</div>
+            </div>
+          </a>
+        </li>
+        <li class="c-card__item">
+          <a href="#" class="c-card__body u-height--290">
+            <div class="c-card__imgWrap">
+              <img class="c-card__img--large" src="images/event_3.jpg" alt="イベント">
+            </div>
+            <div class="c-card__info u-mt--10">
+              <div class="c-card__tag">イベント／体験イベント</div>
+              <div class="c-card__title u-mt--8d4">ニジマス釣り体験</div>
+              <div class="c-card__period u-mt--4d8">2026年3月1日～2026年4月10日</div>
+            </div>
+          </a>
+        </li>
+        <li class="c-card__item">
+          <a href="#" class="c-card__body u-height--290">
+            <div class="c-card__imgWrap">
+              <div class="c-card__badge u-bgc--darkred">NEW</div>
+              <img class="c-card__img--large" src="images/event_4.jpg" alt="イベント">
+            </div>
+            <div class="c-card__info u-mt--10">
+              <div class="c-card__tag">イベント</div>
+              <div class="c-card__title u-mt--8d4">うまいもの市場</div>
+              <div class="c-card__period u-mt--4d8">2026年4月8日～2026年5月22日</div>
+            </div>
+          </a>
+        </li>
+        <li class="c-card__item">
+          <a href="#" class="c-card__body u-height--290">
+            <div class="c-card__imgWrap">
+              <img class="c-card__img--large" src="images/event_5.jpg" alt="イベント">
+            </div>
+            <div class="c-card__info u-mt--10">
+              <div class="c-card__tag">イベント／体験イベント</div>
+              <div class="c-card__title u-mt--8d4">おしごと体験イベント</div>
+              <div class="c-card__period u-mt--4d8">2026年1月28日～2026年5月5日</div>
+            </div>
+          </a>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section class="p-event u-mt--70">
-    <div class="p-event__top">
-      <h2 class="c-sectionTitle__wrap">
-        <span class="c-sectionTitle__en">EVENT & CAMPAIGN</span>
-        <span class="c-sectionTitle__jp u-mt--4">イベント&キャンペーン</span>
-      </h2>
-      <div class="c-btn__wrap">
-        <a href="#" class="c-btn__shadow">MORE</a>
-        <a href="#" class="c-btn__shadow">CALENDER</a>
-      </div>
+    <div class="u-bg__decoWrap" aria-hidden="true">
+      <img class="u-bg__deco--3" src="images/deco_plain.png" alt="">
     </div>
-    <ul class="c-card__scroll u-mt--25d6">
-      <li class="c-card__item">
-        <a href="#" class="c-card__body u-height--290">
-          <div class="c-card__imgWrap">
-            <div class="c-card__badge u-bgc--darkred">NEW</div>
-            <img class="c-card__img--large" src="images/thumb_01.jpg" alt="イベント">
-          </div>
-          <div class="c-card__info u-mt--10">
-            <div class="c-card__tag">イベント</div>
-            <div class="c-card__title u-mt--8d4">タイトルタイトルタイトルタイトルタイトル</div>
-            <div class="c-card__period u-mt--4d8">2026年1月9日 ～ 2026年3月1日</div>
-          </div>
-        </a>
-      </li>
-      <li class="c-card__item">
-        <a href="#" class="c-card__body u-height--290">
-          <div class="c-card__imgWrap">
-            <div class="c-card__badge u-bgc--darkred">NEW</div>
-            <img class="c-card__img--large" src="images/thumb_01.jpg" alt="イベント">
-          </div>
-          <div class="c-card__info u-mt--10">
-            <div class="c-card__tag">イベント</div>
-            <div class="c-card__title u-mt--8d4">タイトルタイトルタイトルタイトルタイトル</div>
-            <div class="c-card__period u-mt--4d8">2026年1月9日 ～ 2026年3月1日</div>
-          </div>
-        </a>
-      </li>
-      <li class="c-card__item">
-        <a href="#" class="c-card__body u-height--290">
-          <div class="c-card__imgWrap">
-            <div class="c-card__badge u-bgc--darkred">NEW</div>
-            <img class="c-card__img--large" src="images/thumb_01.jpg" alt="イベント">
-          </div>
-          <div class="c-card__info u-mt--10">
-            <div class="c-card__tag">イベント</div>
-            <div class="c-card__title u-mt--8d4">タイトルタイトルタイトルタイトルタイトル</div>
-            <div class="c-card__period u-mt--4d8">2026年1月9日 ～ 2026年3月1日</div>
-          </div>
-        </a>
-      </li>
-      <li class="c-card__item">
-        <a href="#" class="c-card__body u-height--290">
-          <div class="c-card__imgWrap">
-            <div class="c-card__badge u-bgc--darkred">NEW</div>
-            <img class="c-card__img--large" src="images/thumb_01.jpg" alt="イベント">
-          </div>
-          <div class="c-card__info u-mt--10">
-            <div class="c-card__tag">イベント</div>
-            <div class="c-card__title u-mt--8d4">タイトルタイトルタイトルタイトルタイトル</div>
-            <div class="c-card__period u-mt--4d8">2026年1月9日 ～ 2026年3月1日</div>
-          </div>
-        </a>
-      </li>
-      <li class="c-card__item">
-        <a href="#" class="c-card__body u-height--290">
-          <div class="c-card__imgWrap">
-            <div class="c-card__badge u-bgc--darkred">NEW</div>
-            <img class="c-card__img--large" src="images/thumb_01.jpg" alt="イベント">
-          </div>
-          <div class="c-card__info u-mt--10">
-            <div class="c-card__tag">イベント</div>
-            <div class="c-card__title u-mt--8d4">タイトルタイトルタイトルタイトルタイトル</div>
-            <div class="c-card__period u-mt--4d8">2026年1月9日 ～ 2026年3月1日</div>
-          </div>
-        </a>
-    </ul>
-  </section>
 
-  <section class="p-newShop u-mt--75">
-    <div class="p-newShop__top">
-      <h2 class="c-sectionTitle__wrap">
-        <span class="c-sectionTitle__en">NEW SHOP</span>
-        <span class="c-sectionTitle__jp u-mt--4">ショップオープン情報</span>
-      </h2>
-      <div class="c-btn__wrap">
-        <a href="#" class="c-btn__shadow">MORE</a>
-      </div>
-    </div>
-    <div class="p-newShop__card--tab u-mt--25d6">ニューショップ</div>
-    <div class="p-newShop__card--scroll u-pt--30">
-      <ul class="p-newShop__cardList">
-        <li class="p-newShop__cardItem">
-          <a href="#" class="p-newShop__card">
-            <div class="p-newShop__imgWrap">
-              <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-            </div>
-            <div class="p-newShop__infoWrap">
-              <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-              <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-              <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-              <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-            </div>
-          </a>
-        </li>
-        <li class="p-newShop__cardItem">
-          <a href="#" class="p-newShop__card">
-            <div class="p-newShop__imgWrap">
-              <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-            </div>
-            <div class="p-newShop__infoWrap">
-              <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-              <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-              <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-              <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-            </div>
-          </a>
-        </li>
-        <li class="p-newShop__cardItem">
-          <a href="#" class="p-newShop__card">
-            <div class="p-newShop__imgWrap">
-              <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-            </div>
-            <div class="p-newShop__infoWrap">
-              <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-              <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-              <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-              <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="p-popupShop u-mt--55">
-    <div class="p-popupShop__top">
-      <h2 class="c-sectionTitle__wrap">
-        <span class="c-sectionTitle__en">POP UP SHOP</span>
-        <span class="c-sectionTitle__jp u-mt--4">期間限定ショップ</span>
-      </h2>
-      <div class="c-btn__wrap">
-        <a href="#" class="c-btn__shadow">MORE</a>
-        <a href="#" class="c-btn__shadow">CALENDER</a>
-      </div>
-    </div>
-    <div class="c-tab__area">
-      <div class="c-tab__buttons u-mt--25d6">
-        <button type="button" class="c-tab__button u-width--495 is-active" data-tab="popup-tab1">開催中</button>
-        <button type="button" class="c-tab__button u-width--495" data-tab="popup-tab2">開催予定</button>
-      </div>
-      <!-- 開催中  -->
-      <div id="popup-tab1" class="c-tab__content is-active">
-        <div class="p-popupShop__card--scroll u-pt--30">
-          <ul class="p-popupShop__cardList">
-            <li class="p-popupShop__cardItem">
-              <a href="#" class="p-popupShop__card">
-                <div class="p-popupShop__imgWrap">
-                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-                </div>
-                <div class="p-popupShop__infoWrap">
-                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-                </div>
-              </a>
-            </li>
-            <li class="p-popupShop__cardItem">
-              <a href="#" class="p-popupShop__card">
-                <div class="p-popupShop__imgWrap">
-                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-                </div>
-                <div class="p-popupShop__infoWrap">
-                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-                </div>
-              </a>
-            </li>
-            <li class="p-popupShop__cardItem">
-              <a href="#" class="p-popupShop__card">
-                <div class="p-popupShop__imgWrap">
-                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-                </div>
-                <div class="p-popupShop__infoWrap">
-                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-                </div>
-              </a>
-            </li>
-          </ul>
+    <section class="p-newShop u-mt--75">
+      <div class="p-newShop__top">
+        <h2 class="c-sectionTitle__wrap">
+          <span class="c-sectionTitle__en">NEW SHOP</span>
+          <span class="c-sectionTitle__jp u-mt--4">ショップオープン情報</span>
+        </h2>
+        <div class="c-btn__wrap">
+          <a href="#" class="c-btn__shadow">MORE</a>
         </div>
       </div>
-      <!-- 開催予定 -->
-      <div id="popup-tab2" class="c-tab__content">
-        <div class="p-popupShop__card--scroll u-pt--30">
-          <ul class="p-popupShop__cardList">
-            <li class="p-popupShop__cardItem">
-              <a href="#" class="p-popupShop__card">
-                <div class="p-popupShop__imgWrap">
-                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-                </div>
-                <div class="p-popupShop__infoWrap">
-                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-                </div>
-              </a>
-            </li>
-            <li class="p-popupShop__cardItem">
-              <a href="#" class="p-popupShop__card">
-                <div class="p-popupShop__imgWrap">
-                  <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
-                </div>
-                <div class="p-popupShop__infoWrap">
-                  <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
-                  <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
-                  <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
-                  <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
-                </div>
-              </a>
-            </li>
-          </ul>
+      <div class="p-newShop__card--tab u-mt--25d6">ニューショップ</div>
+      <div class="p-newShop__card--scroll u-pt--30">
+        <ul class="p-newShop__cardList">
+          <li class="p-newShop__cardItem">
+            <a href="#" class="p-newShop__card">
+              <div class="p-newShop__imgWrap">
+                <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+              </div>
+              <div class="p-newShop__infoWrap">
+                <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+              </div>
+            </a>
+          </li>
+          <li class="p-newShop__cardItem">
+            <a href="#" class="p-newShop__card">
+              <div class="p-newShop__imgWrap">
+                <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+              </div>
+              <div class="p-newShop__infoWrap">
+                <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+              </div>
+            </a>
+          </li>
+          <li class="p-newShop__cardItem">
+            <a href="#" class="p-newShop__card">
+              <div class="p-newShop__imgWrap">
+                <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+              </div>
+              <div class="p-newShop__infoWrap">
+                <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p-popupShop u-mt--55">
+      <div class="p-popupShop__top">
+        <h2 class="c-sectionTitle__wrap">
+          <span class="c-sectionTitle__en">POP UP SHOP</span>
+          <span class="c-sectionTitle__jp u-mt--4">期間限定ショップ</span>
+        </h2>
+        <div class="c-btn__wrap">
+          <a href="#" class="c-btn__shadow">MORE</a>
+          <a href="#" class="c-btn__shadow">CALENDER</a>
         </div>
       </div>
-    </div>
+      <div class="c-tab__area">
+        <div class="c-tab__buttons u-mt--25d6">
+          <button type="button" class="c-tab__button u-width--495 is-active" data-tab="popup-tab1">開催中</button>
+          <button type="button" class="c-tab__button u-width--495" data-tab="popup-tab2">開催予定</button>
+        </div>
+        <!-- 開催中  -->
+        <div id="popup-tab1" class="c-tab__content is-active">
+          <div class="p-popupShop__card--scroll u-pt--30">
+            <ul class="p-popupShop__cardList">
+              <li class="p-popupShop__cardItem">
+                <a href="#" class="p-popupShop__card">
+                  <div class="p-popupShop__imgWrap">
+                    <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                  </div>
+                  <div class="p-popupShop__infoWrap">
+                    <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                    <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                    <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                    <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                  </div>
+                </a>
+              </li>
+              <li class="p-popupShop__cardItem">
+                <a href="#" class="p-popupShop__card">
+                  <div class="p-popupShop__imgWrap">
+                    <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                  </div>
+                  <div class="p-popupShop__infoWrap">
+                    <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                    <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                    <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                    <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                  </div>
+                </a>
+              </li>
+              <li class="p-popupShop__cardItem">
+                <a href="#" class="p-popupShop__card">
+                  <div class="p-popupShop__imgWrap">
+                    <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                  </div>
+                  <div class="p-popupShop__infoWrap">
+                    <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                    <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                    <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                    <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 開催予定 -->
+        <div id="popup-tab2" class="c-tab__content">
+          <div class="p-popupShop__card--scroll u-pt--30">
+            <ul class="p-popupShop__cardList">
+              <li class="p-popupShop__cardItem">
+                <a href="#" class="p-popupShop__card">
+                  <div class="p-popupShop__imgWrap">
+                    <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                  </div>
+                  <div class="p-popupShop__infoWrap">
+                    <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                    <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                    <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                    <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                  </div>
+                </a>
+              </li>
+              <li class="p-popupShop__cardItem">
+                <a href="#" class="p-popupShop__card">
+                  <div class="p-popupShop__imgWrap">
+                    <img class="c-card__img--square" src="images/thumb_01.jpg" alt="イベント">
+                  </div>
+                  <div class="p-popupShop__infoWrap">
+                    <div class="c-card__tag--large u-bgc--tag1">雑貨＆ファッション</div>
+                    <div class="c-card__floor u-mt--10">4F イーストヤード 10番地</div>
+                    <div class="c-card__title u-mt--6">【4/1 OPEN】ものとアート</div>
+                    <div class="c-card__period u-mt--4">オープン日／2026年4月1日</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
   <section class="p-shopNews u-mt--35">
@@ -850,7 +853,8 @@
           <li class="p-announce__newsItem">
             <span class="p-announce__newsTag">リリース情報</span>
             <span class="p-announce__newsDate">2026年3月24日</span>
-            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカハシ フードマルシェ全面リニューアル -第一弾-
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカハシ フードマルシェ全面リニューアル
+                -第一弾-
               </a></span>
           </li>
         </ul>
@@ -905,7 +909,8 @@
           <li class="p-announce__newsItem">
             <span class="p-announce__newsTag">リリース情報</span>
             <span class="p-announce__newsDate">2026年3月24日</span>
-            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカハシ フードマルシェ全面リニューアル -第一弾-
+            <span class="p-announce__newsTitle"><a href="#" class="p-announce__newslink">奥多摩タカハシ フードマルシェ全面リニューアル
+                -第一弾-
               </a></span>
           </li>
         </ul>
