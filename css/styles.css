@@ -498,6 +498,56 @@ svg.feather-map-pin {
   }
 }
 
+.c-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  width: 167px;
+  padding: 15px 0;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 33px;
+  background-color: #FFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.c-dropdown__item--column1 {
+  min-width: 100%;
+}
+.c-dropdown__item--column2 {
+  min-width: 50%;
+}
+.c-dropdown__text {
+  display: block;
+  font-size: 13px;
+  color: #4d4d4d;
+  text-align: left;
+  padding: 9.1px;
+}
+.c-dropdown__text::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 1.5px solid #4b91ca;
+  border-right: 1.5px solid #4b91ca;
+  transform: rotate(45deg) translateY(-2px);
+  margin-right: 8px;
+}
+
+.c-dropdown__text:hover {
+  background-color: #d5e6ed;
+  color: #4b91ca;
+  text-decoration: underline;
+}
+
+.c-globalNav__item:hover .c-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
 .p-hero-wrap {
   position: relative;
   width: 100vw;
@@ -682,7 +732,9 @@ svg.feather-map-pin {
 .p-popupShop {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
+  padding-bottom: 147px;
 }
 .p-popupShop__top {
   display: flex;
@@ -1071,23 +1123,6 @@ svg.feather-map-pin {
   pointer-events: none;
 }
 
-.p-bg__deco--1 {
-  width: 460px;
-  position: absolute;
-  top: 155px;
-  left: -140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.p-bg__deco--2 {
-  width: 248px;
-  position: absolute;
-  top: -45px;
-  right: -140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-footer__top {
   display: flex;
   flex-direction: column;
@@ -1270,6 +1305,14 @@ svg.feather-map-pin {
   padding-top: 30px;
 }
 
+.u-pr--15 {
+  padding-right: 15px !important;
+}
+
+.u-pl--15 {
+  padding-left: 15px !important;
+}
+
 .u-height--38 {
   min-height: 38px;
 }
@@ -1382,6 +1425,10 @@ svg.feather-map-pin {
   align-items: center;
 }
 
+.u-top--42 {
+  top: 42px;
+}
+
 .u-bg__decoWrap {
   width: 1000px;
   position: relative;
@@ -1408,8 +1455,24 @@ svg.feather-map-pin {
 .u-bg__deco--3 {
   height: 125px;
   position: absolute;
-  top: 65px;
+  top: 700px;
   left: -350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.u-bg__deco--4 {
+  width: 460px;
+  position: absolute;
+  top: 1300px;
+  left: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.u-bg__deco--5 {
+  width: 460px;
+  position: absolute;
+  top: 0;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }

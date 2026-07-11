@@ -3,7 +3,9 @@
 .p-popupShop {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
+  padding-bottom: 147px;
 
   &__top {
     display: flex;

@@ -1,0 +1,58 @@
+@use "../../foundation/variable" as v;
+
+.c-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  width: 167px;
+  padding: 15px 0;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 33px;
+  background-color: #FFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  z-index: 20;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+
+  &__item {
+    &--column1 {
+      min-width: 100%;
+    }
+
+    &--column2 {
+      min-width: 50%;
+    }
+  }
+
+  &__text {
+    display: block;
+    font-size: 13px;
+    color: #4d4d4d;
+    text-align: left;
+    padding: 9.1px;
+  }
+
+  &__text::before {
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 1.5px solid v.$color-main;
+    border-right: 1.5px solid v.$color-main;
+    transform: rotate(45deg) translateY(-2px);
+    margin-right: 8px;
+  }
+}
+
+.c-dropdown__text:hover {
+  background-color: #d5e6ed;
+  color: v.$color-main;
+  text-decoration: underline;
+}
+
+.c-globalNav__item:hover .c-dropdown {
+  opacity: 1;
+  visibility: visible;
+}

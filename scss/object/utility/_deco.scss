@@ -25,8 +25,24 @@
   &--3 {
     height: 125px;
     position: absolute;
-    top: 65px;
+    top: 700px;
     left: -350px;
+    object-fit: cover;
+  }
+
+  &--4 {
+    width: 460px;
+    position: absolute;
+    top: 1300px;
+    left: 600px;
+    object-fit: cover;
+  }
+
+  &--5 {
+    width: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
   }
 }
