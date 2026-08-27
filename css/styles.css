@@ -115,6 +115,7 @@ a {
   gap: 25px;
   overflow-x: auto;
   padding-bottom: 25px;
+  z-index: 1;
 }
 .c-card__item {
   flex: 0 0 280px;
@@ -288,6 +289,7 @@ a {
 .c-sectionTitle__wrap {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 .c-sectionTitle__en {
   color: #4d4d4d;
@@ -634,8 +636,8 @@ svg.feather-map-pin {
 
 .p-hero-wrap .swiper-pagination {
   position: relative;
-  margin-top: 27px;
-  padding: 10px 0;
+  margin-top: 17px;
+  padding: 0;
   text-align: center;
 }
 
@@ -667,7 +669,6 @@ svg.feather-map-pin {
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  z-index: 1;
 }
 
 .p-newShop {
@@ -745,7 +746,7 @@ svg.feather-map-pin {
 .p-popupShop__card--scroll {
   width: 1000px;
   overflow-x: auto;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 }
 .p-popupShop__cardList {
   display: flex;
@@ -811,7 +812,7 @@ svg.feather-map-pin {
   height: 41.6px;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #808080;
+  color: #4d4d4d;
   text-align: center;
 }
 .p-shopNews__categoryIcon {
@@ -846,6 +847,8 @@ svg.feather-map-pin {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 90px 0 115px;
+  background-color: #ffe03f;
 }
 .p-trend__swiper {
   width: 100%;
@@ -960,12 +963,14 @@ svg.feather-map-pin {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 70px;
 }
 .p-recommend__item {
   display: block;
   width: 242px;
   height: 73px;
   border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(77, 77, 77, 0.3);
   overflow: hidden;
 }
 .p-recommend__img {
@@ -980,6 +985,7 @@ svg.feather-map-pin {
   flex-direction: column;
   align-items: center;
   background: #a2d6e4;
+  padding: 70px 0 100px;
 }
 .p-announce__top {
   display: flex;
@@ -1102,7 +1108,6 @@ svg.feather-map-pin {
   display: block;
   width: 313px;
   height: 101px;
-  border: 1px solid #4d4d4d;
 }
 .p-areaInfo__link .p-areaInfo__img {
   width: 100%;
@@ -1121,6 +1126,127 @@ svg.feather-map-pin {
   position: relative;
   margin: 0 auto;
   pointer-events: none;
+}
+
+.p-bg__white {
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 190px;
+}
+.p-bg__white::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: -185px;
+  left: 0;
+  background-color: #FFF;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.p-bg__white--2 {
+  position: relative;
+  background-color: #fff;
+}
+.p-bg__white--2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: -220px;
+  left: 0;
+  background-color: #FFF;
+  clip-path: polygon(0 100%, 100% 0%, 100% 100%);
+}
+
+.p-bg__deco--1 {
+  width: 460px;
+  position: absolute;
+  top: 155px;
+  left: -140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--2 {
+  width: 248px;
+  position: absolute;
+  top: -45px;
+  right: -140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--3 {
+  height: 125px;
+  position: absolute;
+  top: 700px;
+  left: -350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--4 {
+  width: 442px;
+  position: absolute;
+  top: 1255px;
+  left: 455px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--5 {
+  width: 514px;
+  position: absolute;
+  top: 1090px;
+  left: 740px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--6 {
+  width: 684px;
+  position: absolute;
+  top: -85px;
+  left: -285px;
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--7 {
+  width: 442px;
+  position: absolute;
+  top: 165px;
+  left: 855px;
+  opacity: 0.8;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--8 {
+  width: 1300px;
+  position: absolute;
+  bottom: -884px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--9 {
+  width: 48px;
+  position: absolute;
+  bottom: 390px;
+  left: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--10 {
+  width: 600px;
+  position: absolute;
+  bottom: -60px;
+  left: -300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-bg__deco--11 {
+  width: 496px;
+  position: absolute;
+  bottom: 133px;
+  right: -200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-footer__top {
@@ -1313,6 +1439,18 @@ svg.feather-map-pin {
   padding-left: 15px !important;
 }
 
+.u-pb--100 {
+  padding-bottom: 100px;
+}
+
+.u-hoverOp--50 {
+  transition: opacity 0.3s;
+}
+
+.u-hoverOp--50:hover {
+  opacity: 0.5;
+}
+
 .u-height--38 {
   min-height: 38px;
 }
@@ -1373,6 +1511,14 @@ svg.feather-map-pin {
   background-color: #6D94BD;
 }
 
+.u-bgc--tag2 {
+  background-color: #C4788F;
+}
+
+.u-bgc--tag3 {
+  background-color: #C9A565;
+}
+
 .u-category--fashion {
   --icon-color: #7794bb;
   --circle-color: #bdcfe8;
@@ -1427,52 +1573,4 @@ svg.feather-map-pin {
 
 .u-top--42 {
   top: 42px;
-}
-
-.u-bg__decoWrap {
-  width: 1000px;
-  position: relative;
-  margin: 0 auto;
-  pointer-events: none;
-}
-
-.u-bg__deco--1 {
-  width: 460px;
-  position: absolute;
-  top: 155px;
-  left: -140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.u-bg__deco--2 {
-  width: 248px;
-  position: absolute;
-  top: -45px;
-  right: -140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.u-bg__deco--3 {
-  height: 125px;
-  position: absolute;
-  top: 700px;
-  left: -350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.u-bg__deco--4 {
-  width: 460px;
-  position: absolute;
-  top: 1300px;
-  left: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.u-bg__deco--5 {
-  width: 460px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
 }

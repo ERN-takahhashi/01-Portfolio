@@ -1,128 +1,144 @@
-    .u-height--38 {
-      min-height: 38px;
-    }
+.u-hoverOp--50 {
+  transition: opacity 0.3s;
+}
 
-    .u-height--210 {
-      height: 210px;
-    }
+.u-hoverOp--50:hover {
+  opacity: 0.5;
+}
 
-    .u-height--270 {
-      height: 270px;
-    }
+.u-height--38 {
+  min-height: 38px;
+}
 
-    .u-height--290 {
-      height: 290px;
-    }
+.u-height--210 {
+  height: 210px;
+}
 
-    .u-height--290 {
-      height: 290px;
-    }
+.u-height--270 {
+  height: 270px;
+}
 
-    .u-height--410 {
-      height: 410px;
-    }
+.u-height--290 {
+  height: 290px;
+}
 
-    .u-width--142 {
-      width: 142px;
-    }
+.u-height--290 {
+  height: 290px;
+}
 
-    .u-width--310 {
-      width: 310px;
-    }
+.u-height--410 {
+  height: 410px;
+}
 
-    .u-width--495 {
-      width: 495px;
-    }
+.u-width--142 {
+  width: 142px;
+}
 
-    .u-bold {
-      font-weight: bold !important;
-    }
+.u-width--310 {
+  width: 310px;
+}
 
-    .u-bold--700 {
-      font-weight: 700;
-    }
+.u-width--495 {
+  width: 495px;
+}
 
-    .u-fontSize--33 {
-      font-size: 33px;
-    }
+.u-bold {
+  font-weight: bold !important;
+}
 
-    .u-fontSize--43 {
-      font-size: 43px;
-    }
+.u-bold--700 {
+  font-weight: 700;
+}
 
-    .u-bgc--darkred {
-      background-color: #e54829;
-    }
+.u-fontSize--33 {
+  font-size: 33px;
+}
 
-    .u-bgc--tag1 {
-      background-color: #6D94BD;
-    }
+.u-fontSize--43 {
+  font-size: 43px;
+}
 
-    .u-category {
-      &--fashion {
-        --icon-color: #7794bb;
-        --circle-color: #bdcfe8;
-      }
+.u-bgc--darkred {
+  background-color: #e54829;
+}
 
-      &--sweet {
-        --icon-color: #ba7c8e;
-        --circle-color: #eec7d1;
-      }
+.u-bgc--tag1 {
+  background-color: #6D94BD;
+}
 
-      &--meal {
-        --icon-color: #c3a76e;
-        --circle-color: #f7e0b4;
-      }
+.u-bgc--tag2 {
+  background-color: #C4788F;
+}
 
-      &--info {
-        --icon-color: #94af6d;
-        --circle-color: #cadcaf;
-      }
+.u-bgc--tag3 {
+  background-color: #C9A565;
+}
 
-      &--ticket {
-        --icon-color: #79afb0;
-        --circle-color: #b3d9da;
-      }
-    }
+.u-category {
+  &--fashion {
+    --icon-color: #7794bb;
+    --circle-color: #bdcfe8;
+  }
 
-    .u-color {
-      &--fashion {
-        background: #7794bb;
-      }
+  &--sweet {
+    --icon-color: #ba7c8e;
+    --circle-color: #eec7d1;
+  }
 
-      &--sweet {
-        background: #ba7c8e;
-      }
+  &--meal {
+    --icon-color: #c3a76e;
+    --circle-color: #f7e0b4;
+  }
 
-      &--meal {
-        background: #c3a76e;
-      }
+  &--info {
+    --icon-color: #94af6d;
+    --circle-color: #cadcaf;
+  }
 
-      &--info {
-        background: #94af6d;
-      }
+  &--ticket {
+    --icon-color: #79afb0;
+    --circle-color: #b3d9da;
+  }
+}
 
-      &--ticket {
-        background: #79afb0;
-      }
+.u-color {
+  &--fashion {
+    background: #7794bb;
+  }
 
-      &--blue {
-        color: #88a8d1 !important;
-      }
-    }
+  &--sweet {
+    background: #ba7c8e;
+  }
 
-    .u-center {
-      text-align: center;
-    }
+  &--meal {
+    background: #c3a76e;
+  }
 
-    .u-z--1 {
-      z-index: 1;
-    }
+  &--info {
+    background: #94af6d;
+  }
 
-    .u-al--center {
-      align-items: center;
-    }
+  &--ticket {
+    background: #79afb0;
+  }
 
-    .u-top--42 {
-      top: 42px;
-    }
+  &--blue {
+    color: #88a8d1 !important;
+  }
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-z--1 {
+  z-index: 1;
+}
+
+.u-al--center {
+  align-items: center;
+}
+
+.u-top--42 {
+  top: 42px;
+}
